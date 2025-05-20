@@ -11,6 +11,7 @@ function addRadarLayer() {
 
     radarLayer = L.tileLayer.wms("https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows?", {
         layers: 'conus_bref_qcd',
+        opacity: 0.5,
         format: 'image/png',
         transparent: true,
         attribution: "NOAA/NWS",
